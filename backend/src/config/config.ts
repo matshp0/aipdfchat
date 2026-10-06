@@ -1,0 +1,18 @@
+export default () => ({
+  aws: {
+    region: process.env.AWS_REGION!,
+    awsDynamodbDocumentTable: process.env.AWS_DYNAMODB_DOCUMENT_TABLE!,
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
+    documentBucket: process.env.AWS_DOCUMENT_BUCKET!,
+  },
+  pinecone: {
+    apiKey: process.env.PINECONE_API_KEY!,
+    index: process.env.PINECONE_INDEX_NAME!,
+  },
+
+  openAi: {
+    apiKey: process.env.OPENAI_API_KEY!,
+    model: process.env.OPENAI_MODEL!,
+  },
+});
